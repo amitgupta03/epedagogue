@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChatBotModule } from './common-modules/chat-bot/chat-bot.module';
 import { LoaderModule } from './common-modules/loader/loader.module';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { LoaderModule } from './common-modules/loader/loader.module';
     //RouterModule.forRoot(routes), 
     BrowserModule, 
     AppRoutingModule,
-    LoaderModule
+    LoaderModule,
+    ChatBotModule
   ],
   providers: [],
   bootstrap: [AppComponent],
